@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+    <link rel="stylesheet" href="style.css">
+		
+		<script type="module" src="main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+      <div class="controls">
+				<label class="control">
+					Max Distance:
+					<input id="maxDistanceRange" type="number" value="15" max="30" min="5"/>
+				</label>
+				<label class="control">
+					Min Distance:
+					<input id="minDistanceRange" type="number" value="5" max="10" min="2"/>
+				</label>
+				<label class="">
+					Rotation Speed:
+					<input class="rangeInp" id="rotateSpeedRange" type="range" value="25"/>
+				</label>
+				<label class="">
+					Pan Speed:
+					<input class="rangeInp" id="panSpeedRange" type="range" value="25"/>
+				</label>
+				<div class="control" style="margin-right: 15px; margin-top: 5px; margin-bottom: 5px;">
+					Damping: 
+					<button onclick="enableDamping()">ON</button>
+					<button onclick="disableDamping()">OFF</button>
+				</div>
+				<label class="">
+					Damping Factor:
+					<input class="rangeInp" id="dampingFactorRange" type="range"/>
+				</label>
+      </div>
+			<div class="stats">
+				<div class="maxDistanceStat">
+					<p>Max Distance: <span class="stat" id="maxDistanceValue">15</span></p>
+					<p>Min Distance: <span class="stat" id="minDistanceValue">5</span></p>
+					<p>Rotation Speed: <span class="stat" id="rotateSpeedValue">0.25</span></p>
+					<p>Pan Speed: <span class="stat" id="panSpeedValue">0.25</span></p>
+					<p>Damping: <span class="stat" id="dampingValue">True</span></p>
+					<p>Damping Factor: <span class="stat" id="dampingFactorValue">0.5</span></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
