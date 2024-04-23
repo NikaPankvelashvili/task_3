@@ -30,4 +30,4 @@ To interact with the cubes in the scene, follow these instructions:
 
 ## Live Preview:
 To see the live preview follow the link:
-``` https://threewhitecubes.netlify.app ```
+``` https://threecubesorbit.netlify.app ```
